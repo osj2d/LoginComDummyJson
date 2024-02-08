@@ -15,7 +15,6 @@ const Login = () => {
       userLogin(username.value, password.value);
     }
   }
-
   return (
     <form onSubmit={handleSubmit}>
       <Input label="Usuario" type="text" name="username" {...username} />
