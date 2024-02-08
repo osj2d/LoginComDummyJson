@@ -1,9 +1,19 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import { UserStorage } from "./UserContext.jsx";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Conta from "./Components/Conta/Conta.jsx";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+    <React.StrictMode>
+      <UserStorage>
+        <Routes>
+          <Route path="/" element={<App />}></Route>
+          <Route path="conta" element={<Conta />}></Route>
+        </Routes>
+      </UserStorage>
+    </React.StrictMode>
+  </BrowserRouter>
+);
