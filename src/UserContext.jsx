@@ -14,6 +14,7 @@ export const UserStorage = ({ children }) => {
     async function autoLogin() {
       const token = window.localStorage.getItem("token");
       if (token) navigate("/conta");
+      else navigate("/");
     }
     autoLogin();
   }, [navigate]);
@@ -32,7 +33,6 @@ export const UserStorage = ({ children }) => {
     await getUser(token);
     navigate("conta");
   }
-
 
   return (
     <UserContext.Provider

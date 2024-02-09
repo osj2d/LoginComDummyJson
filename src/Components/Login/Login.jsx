@@ -16,11 +16,17 @@ const Login = () => {
     }
   }
   return (
-    <form onSubmit={handleSubmit}>
-      <Input label="Usuario" type="text" name="username" {...username} />
-      <Input label="Senha" type="password" name="password" {...password} />
-      <button>Entrar</button>
-    </form>
+    <div>
+      <form onSubmit={handleSubmit}>
+        <Input label="Usuario" type="text" name="username" {...username} />
+        <Input label="Senha" type="password" name="password" {...password} />
+        <button>Entrar</button>
+      </form>
+      <div>
+        <p>Usuario: kminchelle</p>
+        <p>Senha: 0lelplR </p>
+      </div>
+    </div>
   );
 };
 

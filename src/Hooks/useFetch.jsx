@@ -26,7 +26,6 @@ const useFetch = () => {
       };
     }
   }, []);
-  console.log("UseFetch: ",data)
   return { data, error, loading, request };
 };
 
