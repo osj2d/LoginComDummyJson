@@ -7,6 +7,7 @@ import { UserContext } from "../../UserContext";
 const Login = () => {
   const username = useForm();
   const password = useForm();
+  const [dados, setDados] = React.useState(false);
   const { userLogin, error, loading } = React.useContext(UserContext);
 
   function handleSubmit(event) {
@@ -15,16 +16,25 @@ const Login = () => {
       userLogin(username.value, password.value);
     }
   }
+  function handleShowUser() {
+    setDados((current) => !current);
+    console.log(dados);
+  }
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
+    <div className={styles.container}>
+      <form className={styles.form} onSubmit={handleSubmit}>
         <Input label="Usuario" type="text" name="username" {...username} />
         <Input label="Senha" type="password" name="password" {...password} />
-        <button>Entrar</button>
+        <button className={styles.btn}>Entrar</button>
+        {error && (
+          <p className={`${styles.errorLogin} error`}>
+            Erro ao acessar: {error}
+          </p>
+        )}
       </form>
-      <div>
-        <p>Usuario: kminchelle</p>
-        <p>Senha: 0lelplR </p>
+      <div className={styles.usuario}>
+        <p>username: kminchelle</p>
+        <p>password: 0lelplR </p>
       </div>
     </div>
   );

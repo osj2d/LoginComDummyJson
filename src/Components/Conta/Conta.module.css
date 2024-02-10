@@ -1,0 +1,35 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  align-content: center;
+}
+.dados {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+.dados {
+  color: #2e3440;
+  font-size: 1.5rem;
+}
+.btn {
+  align-self: start;
+  font-size: 1rem;
+  padding: 0 10px;
+  color: #eceff4;
+  border: none;
+  border-radius: 3px;
+  background: #4c566a;
+}
+.btn:hover {
+  cursor: pointer;
+  color: #bf616a;
+}
+.img img {
+  margin: 0 auto;
+}
