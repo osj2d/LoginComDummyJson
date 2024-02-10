@@ -14,8 +14,9 @@ const Input = ({ label, name, type, value, onChange, error }) => {
         value={value}
         onChange={onChange}
         type={type}
+        placeholder={name}
       />
-      {error && <p className={styles.error}>{error}</p>}
+      {error && <p className="error">{error}</p>}
     </div>
   );
 };

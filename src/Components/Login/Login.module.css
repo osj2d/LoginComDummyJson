@@ -1,0 +1,36 @@
+.container {
+  max-width: 1200px;
+  gap: 20px;
+  height: 80vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+}
+.btn {
+  font-size: 1.3rem;
+  padding: 10px;
+  color: #eceff4;
+  border: none;
+  border-radius: 3px;
+  background: #4c566a;
+}
+.btn:hover {
+  cursor: pointer;
+  background: #434c5e;
+}
+.errorLogin {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.usuario {
+  display: flex;
+  flex-direction: column;
+  color: #2e3440;
+}
