@@ -1,9 +1,3 @@
-# React + Vite
+Neste projeto criei um login auth ao utilizar a api dummyjson, nele é possível acessar a página de login onde em usuário e senha, após o ser realizado o login será redirecionado para a página conta onde tem os dados do usuário logado, caso tente acessar a página conta se estiver logado, será redirecionado para a página de login e caso acesse a página inicial com um token ativo, será redirecionado para o Conta.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# LoginComDummyJson
+Link da Api: https://dummyjson.com/
