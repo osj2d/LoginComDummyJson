@@ -3,6 +3,7 @@ import useFetch from "../../Hooks/useFetch";
 import { useNavigate } from "react-router-dom";
 import { Get_User } from "../../Api";
 import styles from "./Conta.module.css";
+import Head from "../../Head";
 
 const Conta = () => {
   const { data, error, loading, request } = useFetch();
@@ -39,6 +40,7 @@ const Conta = () => {
             Sair
           </button>
         </div>
+        <Head title="Conta" />
       </div>
     );
   }
